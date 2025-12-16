@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lección Gamificada - Regla de Tres</title>
+  <style>
+    @page { margin: 2cm; }
+    body { 
+      font-family: 'Arial', sans-serif; 
+      line-height: 1.6;
+      color: #333;
+    }
+    .header {
+      text-align: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 30px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    .intro-box {
+      background: #e0e7ff;
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 5px solid #667eea;
+      margin: 20px 0;
+    }
+    .level {
+      page-break-inside: avoid;
+      background: white;
+      border: 2px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .level h2 {
+      color: #667eea;
+      font-size: 24px;
+      margin-top: 0;
+    }
+    .problem-box {
+      background: #f0f9ff;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+      border-left: 4px solid #3b82f6;
+    }
+    .formula {
+      background: #fef3c7;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 15px 0;
+      border: 2px dashed #f59e0b;
+    }
+    .solution {
+      background: #d1fae5;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+      border-left: 4px solid #10b981;
+    }
+    .hint {
+      background: #fef3c7;
+      padding: 12px;
+      border-radius: 8px;
+      margin: 10px 0;
+      font-size: 14px;
+      border-left: 4px solid #f59e0b;
+    }
+    .steps {
+      background: #f9fafb;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+    .steps ol {
+      margin: 10px 0;
+      padding-left: 25px;
+    }
+    .steps li {
+      margin: 8px 0;
+    }
+    .exercise {
+      background: #fff7ed;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+      border: 2px solid #fb923c;
+    }
+    .tip-box {
+      background: #dbeafe;
+      padding: 12px;
+      border-radius: 8px;
+      margin: 10px 0;
+      font-size: 14px;
+    }
+    .score-section {
+      background: #fef3c7;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background: #667eea;
+      color: white;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 2px solid #e5e7eb;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🎮 AVENTURA DE LA REGLA DE TRES 🎮</h1>
+    <p style="font-size: 20px; margin: 10px 0 0 0;">Lección Gamificada - Aprende Jugando</p>
+  </div>
+
+  <div class="intro-box">
+    <h2>📚 ¿Qué es la Regla de Tres?</h2>
+    <p><strong>La regla de tres</strong> es un método matemático que nos permite resolver problemas de proporcionalidad. Nos ayuda a encontrar un valor desconocido cuando conocemos tres valores relacionados.</p>
+    
+    <div class="formula">
+      Si A es a B, entonces C es a X
+      <br><br>
+      X = (B × C) ÷ A
+    </div>
+    
+    <h3>Tipos de Regla de Tres:</h3>
+    <ul>
+      <li><strong>Directa:</strong> Cuando una cantidad aumenta, la otra también aumenta (o ambas disminuyen)</li>
+      <li><strong>Inversa:</strong> Cuando una cantidad aumenta, la otra disminuye</li>
+    </ul>
+  </div>
+
+  <div class="level">
+    <h2>🍎 Nivel 1: La Tienda de Frutas</h2>
+    
+    <div class="problem-box">
+      <strong>Problema:</strong> Si 3 manzanas cuestan $6, ¿cuánto costarán 5 manzanas?
+    </div>
+    
+    <div class="hint">
+      💡 <strong>Pista:</strong> Primero encuentra cuánto cuesta 1 manzana dividiendo $6 ÷ 3. Luego multiplica por 5.
+    </div>
+    
+    <div class="steps">
+      <h3>Paso a Paso:</h3>
+      <ol>
+        <li><strong>Identificar los datos:</strong>
+          <ul>
+            <li>3 manzanas → $6</li>
+            <li>5 manzanas → ?</li>
+          </ul>
+        </li>
+        <li><strong>Plantear la proporción:</strong>
+          <table>
+            <tr><th>Manzanas</th><th>Precio</th></tr>
+            <tr><td>3</td><td>$6</td></tr>
+            <tr><td>5</td><td>X</td></tr>
+          </table>
+        </li>
+        <li><strong>Aplicar la fórmula:</strong>
+          <div class="formula">X = (6 × 5) ÷ 3 = 30 ÷ 3 = 10</div>
+        </li>
+      </ol>
+    </div>
+    
+    <div class="solution">
+      ✅ <strong>Respuesta:</strong> 5 manzanas costarán $10
+    </div>
+    
+    <div class="exercise">
+      <strong>🎯 Practica tú:</strong> Si 4 naranjas cuestan $8, ¿cuánto costarán 7 naranjas?
+      <br><br>
+      Respuesta: _____________
+    </div>
+  </div>
+
+  <div class="level">
+    <h2>🎮 Nivel 2: La Fábrica de Juguetes</h2>
+    
+    <div class="problem-box">
+      <strong>Problema:</strong> Si 4 máquinas producen 12 juguetes en un día, ¿cuántos juguetes producirán 7 máquinas?
+    </div>
+    
+    <div class="hint">
+      💡 <strong>Pista:</strong> Usa la fórmula: (12 × 7) ÷ 4. Las cantidades son directamente proporcionales.
+    </div>
+    
+    <div class="steps">
+      <h3>Resolución:</h3>
+      <ol>
+        <li><strong>Datos conocidos:</strong>
+          <ul>
+            <li>4 máquinas → 12 juguetes</li>
+            <li>7 máquinas → ?</li>
+          </ul>
+        </li>
+        <li><strong>Aplicamos la regla de tres directa:</strong>
+          <div class="formula">X = (12 × 7) ÷ 4 = 84 ÷ 4 = 21</div>
+        </li>
+      </ol>
+    </div>
+    
+    <div class="solution">
+      ✅ <strong>Respuesta:</strong> 7 máquinas producirán 21 juguetes
+    </div>
+    
+    <div class="exercise">
+      <strong>🎯 Practica tú:</strong> Si 5 trabajadores ensamblan 15 productos, ¿cuántos productos ensamblarán 8 trabajadores?
+      <br><br>
+      Respuesta: _____________
+    </div>
+  </div>
+
+  <div class="level">
+    <h2>🚗 Nivel 3: El Viaje en Coche</h2>
+    
+    <div class="problem-box">
+      <strong>Problema:</strong> Si un coche recorre 240 km en 3 horas, ¿cuántos km recorrerá en 5 horas?
+    </div>
+    
+    <div class="hint">
+      💡 <strong>Pista:</strong> Velocidad constante significa proporción directa. (240 × 5) ÷ 3
+    </div>
+    
+    <div class="steps">
+      <h3>Resolución:</h3>
+      <ol>
+        <li><strong>Planteamiento:</strong>
+          <table>
+            <tr><th>Tiempo (horas)</th><th>Distancia (km)</th></tr>
+            <tr><td>3</td><td>240</td></tr>
+            <tr><td>5</td><td>X</td></tr>
+          </table>
+        </li>
+        <li><strong>Cálculo:</strong>
+          <div class="formula">X = (240 × 5) ÷ 3 = 1200 ÷ 3 = 400</div>
+        </li>
+      </ol>
+    </div>
+    
+    <div class="solution">
+      ✅ <strong>Respuesta:</strong> En 5 horas recorrerá 400 km
+    </div>
+    
+    <div class="exercise">
+      <strong>🎯 Practica tú:</strong> Si en 4 horas recorres 320 km, ¿cuántos km recorrerás en 6 horas?
+      <br><br>
+      Respuesta: _____________
+    </div>
+  </div>
+
+  <div class="level">
+    <h2>🍰 Nivel 4: La Receta de Cocina</h2>
+    
+    <div class="problem-box">
+      <strong>Problema:</strong> Una receta para 6 personas usa 4 huevos. ¿Cuántos huevos se necesitan para 9 personas?
+    </div>
+    
+    <div class="hint">
+      💡 <strong>Pista:</strong> Más personas necesitan más huevos. (4 × 9) ÷ 6
+    </div>
+    
+    <div class="steps">
+      <h3>Resolución:</h3>
+      <ol>
+        <li><strong>Datos:</strong>
+          <ul>
+            <li>6 personas → 4 huevos</li>
+            <li>9 personas → ?</li>
+          </ul>
+        </li>
+        <li><strong>Aplicación:</strong>
+          <div class="formula">X = (4 × 9) ÷ 6 = 36 ÷ 6 = 6</div>
+        </li>
+      </ol>
+    </div>
+    
+    <div class="solution">
+      ✅ <strong>Respuesta:</strong> Se necesitan 6 huevos para 9 personas
+    </div>
+    
+    <div class="exercise">
+      <strong>🎯 Practica tú:</strong> Una receta para 4 personas usa 3 tazas de harina. ¿Cuántas tazas necesitas para 10 personas?
+      <br><br>
+      Respuesta: _____________
+    </div>
+  </div>
+
+  <div class="level">
+    <h2>🏆 Nivel 5: ¡Desafío Final! - Regla de Tres INVERSA</h2>
+    
+    <div class="problem-box">
+      <strong>Problema:</strong> Si 8 trabajadores construyen un muro en 12 días, ¿cuántos días tardarán 6 trabajadores?
+    </div>
+    
+    <div class="tip-box">
+      ⚠️ <strong>¡Atención!</strong> Esta es una proporción INVERSA: menos trabajadores tardarán MÁS tiempo.
+    </div>
+    
+    <div class="hint">
+      💡 <strong>Pista:</strong> En la regla de tres inversa, multiplicamos directamente: (8 × 12) ÷ 6
+    </div>
+    
+    <div class="steps">
+      <h3>Resolución de Proporción Inversa:</h3>
+      <ol>
+        <li><strong>Identificar que es INVERSA:</strong>
+          <ul>
+            <li>Menos trabajadores → MÁS tiempo</li>
+            <li>Más trabajadores → MENOS tiempo</li>
+          </ul>
+        </li>
+        <li><strong>Planteamiento:</strong>
+          <table>
+            <tr><th>Trabajadores</th><th>Días</th></tr>
+            <tr><td>8</td><td>12</td></tr>
+            <tr><td>6</td><td>X</td></tr>
+          </table>
+        </li>
+        <li><strong>Fórmula inversa:</strong>
+          <div class="formula">X = (8 × 12) ÷ 6 = 96 ÷ 6 = 16</div>
+        </li>
+      </ol>
+    </div>
+    
+    <div class="solution">
+      ✅ <strong>Respuesta:</strong> 6 trabajadores tardarán 16 días
+      <br><br>
+      <strong>Verificación:</strong> 8 trabajadores × 12 días = 96 días-persona
+      <br>6 trabajadores × 16 días = 96 días-persona ✓
+    </div>
+    
+    <div class="exercise">
+      <strong>🎯 Practica tú:</strong> Si 10 obreros terminan un trabajo en 6 días, ¿cuántos días tardarán 5 obreros?
+      <br><br>
+      Respuesta: _____________
+    </div>
+  </div>
+
+  <div class="intro-box" style="background: #d1fae5;">
+    <h2>📊 Resumen y Diferencias Clave</h2>
+    
+    <table>
+      <tr>
+        <th>Aspecto</th>
+        <th>Regla de Tres DIRECTA</th>
+        <th>Regla de Tres INVERSA</th>
+      </tr>
+      <tr>
+        <td><strong>Relación</strong></td>
+        <td>A más → más<br>A menos → menos</td>
+        <td>A más → menos<br>A menos → más</td>
+      </tr>
+      <tr>
+        <td><strong>Fórmula</strong></td>
+        <td>X = (B × C) ÷ A</td>
+        <td>X = (A × B) ÷ C</td>
+      </tr>
+      <tr>
+        <td><strong>Ejemplos</strong></td>
+        <td>Precio, distancia, ingredientes</td>
+        <td>Trabajadores-tiempo, velocidad-tiempo</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="score-section">
+    <h2>🎮 Sistema de Puntuación</h2>
+    <p><strong>⭐⭐⭐</strong> = Primer intento correcto (300 puntos)</p>
+    <p><strong>⭐⭐</strong> = Segundo intento correcto (200 puntos)</p>
+    <p><strong>⭐</strong> = Tercer intento correcto (100 puntos)</p>
+    <br>
+    <h3>Tu Progreso:</h3>
+    <p>Nivel 1: _____ estrellas</p>
+    <p>Nivel 2: _____ estrellas</p>
+    <p>Nivel 3: _____ estrellas</p>
+    <p>Nivel 4: _____ estrellas</p>
+    <p>Nivel 5: _____ estrellas</p>
+    <br>
+    <p><strong>TOTAL: _____ / 15 estrellas</strong></p>
+  </div>
+
+  <div class="intro-box" style="background: #fef3c7;">
+    <h2>💡 Consejos para Resolver Problemas</h2>
+    <ol>
+      <li><strong>Lee cuidadosamente:</strong> Identifica qué datos conoces y qué necesitas encontrar</li>
+      <li><strong>Determina el tipo:</strong> ¿Es directa o inversa? Pregúntate: si una cantidad aumenta, ¿la otra aumenta o disminuye?</li>
+      <li><strong>Organiza los datos:</strong> Usa una tabla para visualizar mejor la información</li>
+      <li><strong>Aplica la fórmula:</strong> Usa la fórmula correcta según el tipo de proporción</li>
+      <li><strong>Verifica:</strong> Comprueba que tu respuesta tenga sentido en el contexto del problema</li>
+    </ol>
+  </div>
+
+  <div class="footer">
+    <p><strong>¡Felicidades por completar la Aventura de la Regla de Tres! 🎉</strong></p>
+    <p>Sigue practicando y serás un maestro de las proporciones</p>
+  </div>
+</body>
+</html>
+    
